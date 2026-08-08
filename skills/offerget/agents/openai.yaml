@@ -1,0 +1,10 @@
+interface:
+  display_name: "Offerget"
+  short_description: "记录校招岗位并自动修复陌生招聘网站的识别适配"
+  icon_small: "./assets/logo.svg"
+  icon_large: "./assets/logo.svg"
+  brand_color: "#0068EB"
+  default_prompt: "Use $offerget to start Offerget, record a recruiting URL, and repair incomplete recognition safely."
+
+policy:
+  allow_implicit_invocation: true
