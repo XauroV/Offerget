@@ -2,7 +2,7 @@
 
 ## Product goal
 
-Help campus-recruiting candidates collect and manage many real job postings without maintaining a spreadsheet. The primary workflow is local, personal and privacy-preserving. The repository can later be shared as an open-source Codex Skill.
+Help candidates collect and manage many real job postings without maintaining a spreadsheet. The primary workflow is local, personal and privacy-preserving. The repository can later be shared as an open-source Codex Skill.
 
 ## Job record
 
