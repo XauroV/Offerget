@@ -1,19 +1,57 @@
 # Offerget
 
+<p align="center">
+  <img src="docs/media/offerget-library.png" alt="Offerget 岗位库看板" width="920" />
+</p>
+
+<p align="center"><strong>把分散的秋招岗位，变成可筛选、可比较、可推进的个人工作台。</strong></p>
+
+Offerget 面向需要同时管理大量校招岗位的求职者。粘贴公开招聘链接，核对识别结果，
+再用列表、看板、企业分组、投递进度和岗位偏好推进每一个机会。
+
 Offerget 是一个面向校招求职者的本地岗位管理工具。粘贴公开招聘链接后，它会提取公司、岗位名称、发布日期、截止日期、工作地、岗位职责和任职要求，并在核对后写入岗位库。
 
 项目同时提供 Codex Skill。遇到陌生招聘网站或字段识别不完整时，Codex 可以复现公开页面、补充平台适配器、添加回归测试并重新验证该链接。
 
+## 产品预览
+
+### 看板：按企业分组浏览
+
+<p align="center">
+  <img src="docs/media/offerget-library.png" alt="Offerget 企业分组看板" width="920" />
+</p>
+
+### 列表：快速核对岗位信息和投递进度
+
+<p align="center">
+  <img src="docs/media/offerget-list.png" alt="Offerget 岗位列表" width="920" />
+</p>
+
+截图展示的是本地示例数据，不包含个人简历、账号凭证或真实隐私数据。
+
+## 适合谁
+
+- 想持续收集真实岗位链接，又不想维护传统表格的秋招求职者
+- 需要同时比较岗位职责、任职要求和投递规则的人
+- 希望在本地保存岗位数据，并让 Codex 协助适配陌生招聘网站的人
+
+## 核心工作流
+
+```text
+粘贴岗位链接 → 识别并核对 → 写入岗位库 → 按企业/类别筛选
+             → 更新投递进度 → 记录岗位偏好 → 批量对比和复盘
+```
+
 ## 核心能力
 
 - 公开岗位链接识别，支持完整、局部、失败三种状态
-- JSON-LD、普通 HTML、ByteDance、Alibaba Campus、北森招聘、Moka、Lever、Greenhouse，其他可自行补充
+- JSON-LD、普通 HTML、ByteDance、Alibaba Campus、北森招聘、Moka、Lever、Greenhouse
 - 列表与看板视图、企业分组、投递规则备注
 - 自定义投递状态、批量管理、岗位对比、回收站
-- 四档岗位偏好，分级记录你的岗位意向
-- 产品、设计、运营、销售、市场、研发等宽口径岗位自动分类
-- 可输入关键词生成tag在卡片展示
-- 支持深色与浅色模式
+- 喜欢、能做、一般、无感四档岗位偏好
+- 产品、设计、运营、销售、管培生等标题驱动的宽口径岗位分类
+- 手动关键词，使用逗号分隔
+- 深色与浅色模式
 - 本地 JSON 持久化，岗位数据默认不会离开电脑
 
 ## 本地运行
@@ -77,7 +115,7 @@ npm test
 
 ## 产品约定
 
-完整产品决策与交互边界见 [product-contract.md](skills/offerget/references/product-contract.md)，招聘网站适配流程见 [adapter-workflow.md](skills/offerget/references/adapter-workflow.md)。
+完整产品决策、交互细节和验收边界见 [product-contract.md](skills/offerget/references/product-contract.md)，招聘网站适配流程见 [adapter-workflow.md](skills/offerget/references/adapter-workflow.md)。
 
 ## 隐私与边界
 
